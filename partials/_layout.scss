@@ -759,13 +759,24 @@
         min-width: 290px;
         width: 100%;
         font-size: 15px;
-    }
-    .product{
+    }.product{
+        margin: 10px;
         img{
-            margin: 0 auto;
+            margin: 10px auto;
             max-width: 200px;
             min-width: 200px;
             width: 50%;
+        }
+        @keyframes moveUpDown {
+            0% {
+                transform: translateY(0); /* Começa do topo */
+            }
+            50% {
+                transform: translateY(15px); /* Desce 15 pixels */
+            }
+            100% {
+                transform: translateY(0); /* Volta ao topo */
+            }
         }
     }
     .information{
