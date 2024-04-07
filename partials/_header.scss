@@ -1,0 +1,102 @@
+header {
+    width: 100%;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+i{
+    color: white;
+}
+
+.header-icons {
+    display: flex;
+    gap: 14px;
+}
+.header-icons a:hover{
+  i{
+    color: $red-light;
+    animation: translateY 0.8s infinite alternate;
+  }  
+}
+
+
+
+@keyframes translateY {
+    from{
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-8px) scale(1.1);
+    } 
+}
+
+.header-button{
+    border: 1px solid $white-normal;
+    padding: 8px 24px;
+    border-radius: 4px;
+    color: $white-normal;
+    transition: background-color 0.8s;
+}
+
+.header-button:hover {
+    border: 1px solid $red-light;
+    background-color: $red-light;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+@media screen and (max-width:768px) {
+    header{
+        width: 100%;
+    }
+    .header-content{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        i{
+            margin-top: 16px;
+            font-size: 34px;
+        }
+    }
+    .header-logo img {
+        width: 260px;
+        margin-top: 46px;
+    }
+    .header-button {
+        display: none;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    header{
+        max-width: 375px;
+        min-width: 320px;
+        width: 100%;
+    }
+    .header-content {
+        flex-direction: column; /* Altera a direção do conteúdo do cabeçalho para uma coluna */
+        gap: 10px; /* Espaçamento entre os elementos */
+    }
+
+    .header-icons {
+        margin-top: 10px; /* Espaçamento superior para os ícones */
+    }
+
+    .header-button {
+        width: 100%; /* Define a largura do botão para 100% */
+        text-align: center; /* Centraliza o texto do botão */
+    }
+
+    .header-logo {
+        margin-top: 20px; /* Aumenta o espaço superior para o logotipo */
+    }
+}
