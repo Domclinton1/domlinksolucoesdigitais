@@ -728,14 +728,22 @@ i {
     width: 100%;
   }
   .bg-home::before {
+<<<<<<< HEAD
     background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e);
+=======
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/dev.jpg");
+>>>>>>> b0f03c2f432424f7df99b354e35e27e53f2b6e3e
     opacity: 0.9;
     max-width: 375px;
     min-width: 320px;
     width: 100%;
   }
   .bg-home::before {
+<<<<<<< HEAD
     background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e);
+=======
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/dev.jpg");
+>>>>>>> b0f03c2f432424f7df99b354e35e27e53f2b6e3e
     opacity: 0.5;
     max-width: 375px;
     min-width: 320px;
@@ -792,6 +800,10 @@ i {
     max-width: 375px;
     min-width: 300px;
     width: 100%;
+<<<<<<< HEAD
+=======
+    height: 970px;
+>>>>>>> b0f03c2f432424f7df99b354e35e27e53f2b6e3e
   }
   .infotxt {
     max-width: 375px;
@@ -799,15 +811,21 @@ i {
     width: 100%;
     font-size: 15px;
   }
+<<<<<<< HEAD
   .product {
     margin: 10px;
   }
   .product img {
     margin: 10px auto;
+=======
+  .product img {
+    margin: 0 auto;
+>>>>>>> b0f03c2f432424f7df99b354e35e27e53f2b6e3e
     max-width: 200px;
     min-width: 200px;
     width: 50%;
   }
+<<<<<<< HEAD
   @keyframes moveUpDown {
     0% {
       transform: translateY(0); /* Começa do topo */
@@ -819,6 +837,8 @@ i {
       transform: translateY(0); /* Volta ao topo */
     }
   }
+=======
+>>>>>>> b0f03c2f432424f7df99b354e35e27e53f2b6e3e
   .information {
     display: flex;
   }
