@@ -499,6 +499,13 @@ i {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .haircuts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 body {
   font-family: "sora", sans-serif;
   width: 100%;

@@ -434,3 +434,10 @@
 }
 
 
+@media screen and (max-width: 768px) {
+    .haircuts {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
