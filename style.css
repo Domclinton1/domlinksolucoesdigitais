@@ -506,6 +506,14 @@ i {
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 450px) {
+  .about-content {
+    display: block;
+  }
+  .modal-content {
+    width: 100%;
+  }
+}
 body {
   font-family: "sora", sans-serif;
   width: 100%;
