@@ -485,11 +485,14 @@
     border: 0;
     font-size: 18px;
     font-weight: 600;
-    margin: 14px 0;
-    
+    margin: 14px 0;    
 }
 .fa-star {
     color: #e9a209;
+}
+.rate {
+    display: flex;
+    justify-content: flex-end;
 }
 @media screen and (max-width: 768px) {
     .haircuts {

@@ -1,16 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var comentarios = document.querySelectorAll('.comentarios li');
-    var index = 0;
-
-    function nextComentario() {
-        comentarios[index].classList.remove('active');
-        index = (index + 1) % comentarios.length;
-        comentarios[index].classList.add('active');
-    }
-
-    setInterval(nextComentario, 5000); // Altere o intervalo de troca de slide conforme necessário (em milissegundos)
-});
-
 
 document.addEventListener("DOMContentLoaded", function() {
     const openModalButtons = document.querySelectorAll(".openModal");
@@ -51,4 +38,8 @@ function orderAds(){
 function orderDelivery(){
     var click = window.document.querySelectorAll(".cta")
     window.open("https://wa.me/5531994038782?text=Ola,%20quero%20adquirir%20meu%20cardápio%20de%20online%20...")
+}
+function stars(){
+    var click = window.document.querySelectorAll(".button-rate")
+    window.open("https://g.page/r/CW83hQok18q-EAE/review")
 }
