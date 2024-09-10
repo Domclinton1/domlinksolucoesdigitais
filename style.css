@@ -627,6 +627,9 @@ i {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  #feedback {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 450px) {
   .about-content {
