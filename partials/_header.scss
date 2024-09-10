@@ -5,12 +5,14 @@ header {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 80%;
 }
 
 i{
     color: white;
 }
+
 
 .header-icons {
     display: flex;
@@ -18,11 +20,30 @@ i{
 }
 .header-icons a:hover{
   i{
-    color: $red-light;
+    color: green;
     animation: translateY 0.8s infinite alternate;
   }  
 }
 
+.servicer {
+    border: 1px solid $white-normal;
+    padding: 8px 24px;
+    border-radius: 4px;
+    color: $white-normal;
+    transition: background-color 0.8s;
+    cursor: pointer;
+
+}
+.servicer:hover {
+    border: 1px solid $white-light;
+    background-color: green;
+}
+
+.header-services {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
 
 
 @keyframes translateY {
@@ -43,8 +64,8 @@ i{
 }
 
 .header-button:hover {
-    border: 1px solid $red-light;
-    background-color: $red-light;
+    border: 1px solid $white-light;
+    background-color: green;
 }
 
 .header-logo{
@@ -62,7 +83,7 @@ i{
         width: 100%;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
 
         i{
             margin-top: 16px;
@@ -73,7 +94,18 @@ i{
         width: 260px;
         margin-top: 46px;
     }
-    .header-button {
-        display: none;
+    .header-services {
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .header-icons {
+    position: absolute;
+    top: 20px; /* Coloca os ícones no topo da página */
+    transform: translateX(-50%); /* Centraliza os ícones horizontalmente */
+        
     }
 }

@@ -57,16 +57,18 @@
         font-size: 48px;
     }
     p{
-        text-align: center;
+        text-align: justify;
         margin: 14px 0;
+        width: 90%;
 
     }
 }
 
+
 .button-contact {
     padding: 14px 28px;
     color: $white-normal;
-    background-color: $red-normal;
+    background-color: green;
     border: 0;
     font-size: 18px;
     font-weight: 600;

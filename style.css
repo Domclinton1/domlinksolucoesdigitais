@@ -14,7 +14,8 @@ header {
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  width: 80%;
 }
 
 i {
@@ -27,8 +28,28 @@ i {
 }
 
 .header-icons a:hover i {
-  color: #d34040;
+  color: green;
   animation: translateY 0.8s infinite alternate;
+}
+
+.servicer {
+  border: 1px solid #FFF;
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: #FFF;
+  transition: background-color 0.8s;
+  cursor: pointer;
+}
+
+.servicer:hover {
+  border: 1px solid #fefbff;
+  background-color: green;
+}
+
+.header-services {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 @keyframes translateY {
@@ -48,8 +69,8 @@ i {
 }
 
 .header-button:hover {
-  border: 1px solid #d34040;
-  background-color: #d34040;
+  border: 1px solid #fefbff;
+  background-color: green;
 }
 
 .header-logo {
@@ -67,7 +88,7 @@ i {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   .header-content i {
     margin-top: 16px;
@@ -77,8 +98,17 @@ i {
     width: 260px;
     margin-top: 46px;
   }
-  .header-button {
-    display: none;
+  .header-services {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-icons {
+    position: absolute;
+    top: 20px; /* Coloca os ícones no topo da página */
+    transform: translateX(-50%); /* Centraliza os ícones horizontalmente */
   }
 }
 * {
@@ -137,14 +167,15 @@ i {
   font-size: 48px;
 }
 .hero p {
-  text-align: center;
+  text-align: justify;
   margin: 14px 0;
+  width: 90%;
 }
 
 .button-contact {
   padding: 14px 28px;
   color: #FFF;
-  background-color: #d94140;
+  background-color: green;
   border: 0;
   font-size: 18px;
   font-weight: 600;
