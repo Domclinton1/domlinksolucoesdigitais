@@ -43,3 +43,19 @@ function stars(){
     var click = window.document.querySelectorAll(".button-rate")
     window.open("https://g.page/r/CW83hQok18q-EAE/review")
 }
+function vidrosa(){
+    var click = window.document.querySelectorAll('#vidrosa')
+    window.open("https://vidrosa.com.br/")
+}
+function gmglass(){
+    var click = window.document.querySelectorAll('#gmglass')
+    window.open("https://www.gmglass.com.br")
+}
+function wedson(){
+    var click = window.document.querySelectorAll("#wedson")
+    window.open("https://www.wedsonconstrucoes.com.br")
+}
+function dnb(){
+    var click = window.document.querySelectorAll("#dnb")
+    window.open("https://wwww.dnbluxemburg.com")
+}
