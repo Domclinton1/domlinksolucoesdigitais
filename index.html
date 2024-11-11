@@ -25,6 +25,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="./assets/icons/logo.png">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16531793438"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-16531793438');
+    </script>
+
+    <!-- Event snippet for Purchase conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+            window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-16531793438/w6LiCNGy7aYZEJ7M_Mo9',
+            'value': 1.0,
+            'currency': 'BRL',
+            'transaction_id': '',
+            'event_callback': callback
+        });
+        return false;
+        }
+    </script>
+    
+
+
 </head>
 <body>
     <header>
@@ -42,7 +74,7 @@
                 <a href="#trafego">Tráfego Pago</a>
                 <a href="#portifolio">Portfólio</a>
             </ul>
-            <a href="https://wa.me/5531994038782?text=Olá%2C%20gostaria%20de%20mais%20informações%20sobre%20a%20promoção%20de%20sites%20e%20landing%20pages%20a%20partir%20de%20R%24%20499%2C00.%20Podemoss%20conversar%20sobre%20como%20funciona%3F" target="_blank" class="cta">Fazer Contato <img class="whatsapp-icon" src="./assets/icons/whatsapp.svg" alt="whatsapp"></a>
+            <a onclick="gtag_report_conversion()" href="https://wa.me/5531994038782?text=Olá%2C%20gostaria%20de%20mais%20informações%20sobre%20a%20promoção%20de%20sites%20e%20landing%20pages%20a%20partir%20de%20R%24%20499%2C00.%20Podemoss%20conversar%20sobre%20como%20funciona%3F" target="_blank" class="cta">Fazer Contato <img class="whatsapp-icon" src="./assets/icons/whatsapp.svg" alt="whatsapp"></a>
 
             <div class="menu-btn" onclick="toggleMenu()">
                 <span></span>
@@ -55,7 +87,7 @@
                 <div class="bg-text">
                     <h1>Criação de Sites <strong>a partir de R$ 499,00</strong></h1>
                     <h2>Somos especializados em Criação de Sites e Gestão de Tráfego Pago, criamos sites que convertem visitantes em clientes para o seu empreendimento!</h2>
-                    <a href="https://wa.me/5531994038782?text=Olá%2C%20gostaria%20de%20mais%20informações%20sobre%20a%20promoção%20de%20sites%20e%20landing%20pages%20a%20partir%20de%20R%24%20499%2C00.%20Podemoss%20conversar%20sobre%20como%20funciona%3F" target="_blank" class="cta">
+                    <a onclick="gtag_report_conversion()" href="https://wa.me/5531994038782?text=Olá%2C%20gostaria%20de%20mais%20informações%20sobre%20a%20promoção%20de%20sites%20e%20landing%20pages%20a%20partir%20de%20R%24%20499%2C00.%20Podemoss%20conversar%20sobre%20como%20funciona%3F" target="_blank" class="cta">
                         Solicitar Orçamento <img src="./assets/icons/whatsapp.svg" alt="whatsapp">
                     </a>
                 </div>
@@ -98,7 +130,7 @@
             </div>
             <div class="action">
                 <p>Quer aumentar suas conversões? Vamos criar uma landing page irresistível para sua empresa. Fale conosco!</p>
-                <a href="https://wa.me/5531994038782?text=Olá%2C%20tenho%20interesse%20em%20criar%20uma%20Landing%20Page%20para%20meu%20negócio.%20Poderia%20me%20dar%20mais%20informações%3F" target="_blank" class="cta">Solicitar Orçamento <img src="./assets/icons/whatsapp.svg" alt="whatsapp"></a>
+                <a onclick="gtag_report_conversion()" href="https://wa.me/5531994038782?text=Olá%2C%20tenho%20interesse%20em%20criar%20uma%20Landing%20Page%20para%20meu%20negócio.%20Poderia%20me%20dar%20mais%20informações%3F" target="_blank" class="cta">Solicitar Orçamento <img src="./assets/icons/whatsapp.svg" alt="whatsapp"></a>
             </div>
         </section>
         <section class="site-institucional" id="site">
@@ -133,7 +165,7 @@
             </div>
             <div class="action">
                 <p>Eleve o nível do seu negócio e passe a confiança que o seu público merece. Comece seu site institucional conosco!</p>
-                <a href="https://wa.me/5531994038782?text=Olá%2C%20gostaria%20de%20criar%20um%20Site%20Institucional%20para%20meu%20negócio.%20Poderia%20me%20passar%20mais%20informações%3F" target="_blank" class="cta">Solicitar Orçamento <img src="./assets/icons/whatsapp.svg" alt="whatsapp"></a>
+                <a  onclick="gtag_report_conversion()" href="https://wa.me/5531994038782?text=Olá%2C%20gostaria%20de%20criar%20um%20Site%20Institucional%20para%20meu%20negócio.%20Poderia%20me%20passar%20mais%20informações%3F" target="_blank" class="cta">Solicitar Orçamento <img src="./assets/icons/whatsapp.svg" alt="whatsapp"></a>
             </div>
         </section>
         <section class="e-commerce" id="e-commerce">
