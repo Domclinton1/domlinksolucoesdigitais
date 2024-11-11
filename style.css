@@ -142,6 +142,15 @@ header {
 
 /* Responsividade para o menu hambúrguer */
 @media (max-width: 768px) {
+    .promo-alert {
+          position: fixed;
+        top: 0;
+        width: 100%;
+        color: #000;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 101;
+    }
     .lista, .cta {
         display: none;
     }
@@ -159,14 +168,21 @@ header {
         right: 0;
         background-color: #000;
         padding: 10px;
+        text-align: end;
     }
 
     .menu.active .cta {
-        display: block;
+        display: none;
         margin-top: 10px;
     }
 
-    
+    .menu {
+        z-index: 100;
+        padding-top: 50px;
+    }
+    header {
+        padding-top: 50px;
+    }
 }
 
 
@@ -181,7 +197,7 @@ header {
     z-index: 99;
     padding: 40px;
     display: flex;
-    position: relative;
+    
 }
 
 .circle {
@@ -291,7 +307,6 @@ header {
         flex-direction: column;
         z-index: 99;
         padding: 20px;
-        background-image: url('./assets/banner/Home.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -304,6 +319,37 @@ header {
     .bg-text .cta{
         width: 70%;
         display: flex;
+    }
+    .circle {
+        min-width: 451px;
+        max-width: 768px;
+        width: 100%; /* Ajuste o tamanho conforme necessário para telas pequenas */
+        height: 100%;
+        right: auto; /* Centraliza o círculo */
+        left: 0;
+        top: 0;
+        z-index: 0; /* Envia o círculo para o fundo */
+        opacity: 0.2; /* Opcional: ajusta a opacidade para não sobrecarregar o conteúdo */
+    }
+    .circle img {
+        width: 100%;
+    }
+    section {
+        min-width: 451px;
+        max-width: 768px;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-content {
+        display: flex;
+        flex-direction: column;
+        max-width: 768px;
+        width: 100%;
+    }
+    .img-section {
+        display: flex;
+        justify-content: center;
+        max-width: 768px;
     }
 }
 
@@ -341,12 +387,6 @@ header {
     text-align: center;
     justify-content: center;
     width: 50%;
-}
-@media screen and (max-width: 450px) {
-
-}
-@media screen and (max-width: 450px) and (max-width: 768px) {
-     
 }
 
 .grid-portifolio {
@@ -393,8 +433,13 @@ header {
         flex-direction: column;
     }
 }
-@media screen and (max-width: 450px) and (max-width: 768px) {
-     
+@media screen and (min-width: 451px) and (max-width: 768px) {
+    .grid-portifolio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.8rem;
+        
+    }
 }
 
 
