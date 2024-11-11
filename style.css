@@ -171,15 +171,39 @@ header {
 
 
 .hero {
+    position: relative; /* Para que os elementos internos possam ser posicionados */
     width: 100%;
 }
+
 .bg-hero {
     width: 100%;
     height: 100vh;
     z-index: 99;
     padding: 40px;
     display: flex;
+    position: relative;
 }
+
+.circle {
+    background-image: url('./assets/images/landingpage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, 
+              #ffdf73 20%,        
+              rgba(255, 223, 115, 0.5) 40%,  
+              rgba(255, 223, 115, 0) 70%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Para posicionar no fundo */
+    right: 0;
+    top: 0;
+    z-index: 1; /* Coloca o circle no fundo */
+}
+
 .bg-text {
     display: flex;
     flex-direction: column;
@@ -187,22 +211,7 @@ header {
     margin-top: 150px;
     gap: 1.8rem;
     width: 55%;
-}
-.circle {
-    background-image: url('./assets/images/landingpage.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 700px;          /* Ajuste o tamanho conforme necessário */
-    height: 700px;
-    background: radial-gradient(circle, 
-              #ffdf73 20%,        /* Cor amarela do centro */
-              rgba(255, 223, 115, 0.5) 40%,  /* Transição suave */
-              rgba(255, 223, 115, 0) 70%);   /* Cor externa esmaecendo */
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    z-index: 2; /* Para garantir que o texto fique sobre o .circle */
 }
 .bg-text h1 {
     font-size: 40px;
@@ -246,19 +255,32 @@ header {
         flex-direction: column;
         z-index: 99;
         padding: 20px;
-        background-image: url('./assets/banner/Home.png');
-        background-repeat: no-repeat;
-        background-size: cover;
+        position: relative;
     }
     .bg-text {
         max-width: 450px;
         width: 100%;
         text-align: justify;
+        z-index: 2;
     }
-    .bg-text .cta{
-        width: 100%;
+    .bg-text .cta {
         display: flex;
+        width: 100%;
     }
+    .circle {
+        max-width: 450px;
+        width: 100%; /* Ajuste o tamanho conforme necessário para telas pequenas */
+        height: 100%;
+        right: auto; /* Centraliza o círculo */
+        left: 0;
+        top: 0;
+        z-index: 0; /* Envia o círculo para o fundo */
+        opacity: 0.2; /* Opcional: ajusta a opacidade para não sobrecarregar o conteúdo */
+    }
+    .circle img {
+        width: 100%;
+    }
+    
 }
 @media screen and (min-width: 451px) and (max-width: 768px) {
     .bg-hero {
