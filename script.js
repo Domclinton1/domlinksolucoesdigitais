@@ -29,7 +29,7 @@ function stars(){
 
 
  // Define a data de término da promoção
- const endDate = new Date("2024-11-15T23:59:59").getTime();
+ const endDate = new Date("2024-11-23T23:59:59").getTime();
 
  // Função para atualizar a contagem regressiva
  function updateCountdown() {
